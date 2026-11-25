@@ -14,6 +14,7 @@
       <span>Lun - Sáb: 9:00 AM - 8:00 PM</span>
     </div>
   </div>
+
   <header class="encabezado">
     <div class="contenedor nav-contenedor">
       <a href="index.html" class="logo">BARBERÍA <span>HJ</span></a>
@@ -22,29 +23,80 @@
           <li><a href="index.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html" class="activo">Contacto</a></li>
+          <li><a href="contacto.html" class="activo" aria-current="page">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <main class="contenedor seccion">
     <h1 class="titulo-seccion">Contacto y Turnos</h1>
-    <p class="subtitulo-seccion">Reserva tu espacio con Helmer José por WhatsApp o formulario.</p>
-    <div class="tarjeta">
-      <h3>Agenda Directa</h3>
-      <p><strong>Barbero:</strong> Helmer José</p>
-      <p><strong>Horario:</strong> Lunes a Sábado de 9:00 AM a 8:00 PM</p>
-      <div class="grupo-botones">
-        <a href="https://wa.me/573234949445?text=Hola%20Helmer,%20quiero%20agendar%20un%20corte%20en%20Barberia%20HJ" target="_blank" class="btn btn-whatsapp">Agendar por WhatsApp</a>
-        <a href="servicios.html" class="btn btn-borde">Ver servicios</a>
+    <p class="subtitulo-seccion">Reserva tu espacio con Helmer José por WhatsApp o mediante el formulario.</p>
+
+    <div class="grid-contacto">
+      <!-- Tarjeta de contacto directo -->
+      <div class="tarjeta">
+        <div>
+          <h3>Agenda Directa</h3>
+          <p><strong>Barbero:</strong> Helmer José</p>
+          <p><strong>Horario:</strong> Lunes a Sábado de 9:00 AM a 8:00 PM</p>
+          <p><strong>Domingos:</strong> 10:00 AM - 3:00 PM</p>
+          <p><strong>WhatsApp:</strong> +57 323 4949445</p>
+        </div>
+        <div class="grupo-botones">
+          <a href="https://wa.me/573234949445?text=Hola%20Helmer,%20quiero%20agendar%20un%20corte%20en%20Barberia%20HJ" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Agendar por WhatsApp</a>
+          <a href="servicios.html" class="btn btn-borde">Ver servicios</a>
+        </div>
       </div>
+
+      <!-- Formulario con validación HTML5 sin JavaScript -->
+      <form class="formulario" action="#" method="post">
+        <h2 style="color: var(--color-acento); font-size: 1.35rem;">Solicitar Turno</h2>
+
+        <div class="campo">
+          <label for="nombre">Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" minlength="3" maxlength="80" placeholder="Ej: Carlos Mendoza" required>
+          <span class="ayuda-campo">Mínimo 3 caracteres.</span>
+        </div>
+
+        <div class="campo">
+          <label for="telefono">Teléfono / WhatsApp *</label>
+          <input type="tel" id="telefono" name="telefono" pattern="[0-9]{7,15}" placeholder="Ej: 3234949445" required>
+          <span class="ayuda-campo">Solo números (entre 7 y 15 dígitos).</span>
+        </div>
+
+        <div class="campo">
+          <label for="servicio">Servicio deseado *</label>
+          <select id="servicio" name="servicio" required>
+            <option value="">Selecciona una opción...</option>
+            <option value="clasico">Corte Clásico ($15.000 COP)</option>
+            <option value="fade">Corte Fade / Degradado ($18.000 COP)</option>
+            <option value="combo">Combo HJ: Corte + Barba ($25.000 COP)</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label for="fecha">Fecha y hora preferida *</label>
+          <input type="datetime-local" id="fecha" name="fecha" required>
+        </div>
+
+        <div class="campo">
+          <label for="nota">Detalles del corte (opcional)</label>
+          <textarea id="nota" name="nota" rows="3" maxlength="250" placeholder="Ej: Quiero degradado medio y arreglo de barba..."></textarea>
+        </div>
+
+        <div class="grupo-botones">
+          <button type="submit" class="btn">Enviar solicitud</button>
+          <button type="reset" class="btn btn-borde">Limpiar</button>
+        </div>
+      </form>
     </div>
   </main>
-  <a href="https://wa.me/573234949445?text=Hola%20Helmer,%20quiero%20agendar%20un%20turno%20en%20Barberia%20HJ" class="whatsapp-flotante" target="_blank" aria-label="Escribir por WhatsApp a Barbería HJ">
-    <svg class="whatsapp-icono" viewBox="0 0 32 32" aria-hidden="true">
-    </svg>
+
+  <a href="https://wa.me/573234949445?text=Hola%20Helmer,%20quiero%20agendar%20un%20turno%20en%20Barberia%20HJ" class="whatsapp-flotante" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp a Barbería HJ">
     <span>WhatsApp</span>
   </a>
+
   <footer class="pie-pagina">
     <div class="contenedor grid-footer">
       <div>
@@ -63,6 +115,7 @@
       <div>
         <h3>Horario</h3>
         <p>Lunes a Sábado: 9:00 AM - 8:00 PM</p>
+        <p>Domingos: 10:00 AM - 3:00 PM</p>
       </div>
       <div>
         <h3>Contacto</h3>
