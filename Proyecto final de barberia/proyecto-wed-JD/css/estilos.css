@@ -1,3 +1,5 @@
+/*Realice el estilos css Juan pablo*/
+
 .hero {
   background-color: var(--color-secundario);
   padding: 55px 0;
@@ -75,7 +77,6 @@
   font-size: 0.98rem;
 }
 
-/* Tarjetas */
 .grid-tarjetas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -135,7 +136,6 @@
   color: var(--color-acento);
 }
 
-/* Galería */
 .grid-galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -189,7 +189,6 @@
   font-family: var(--fuente-titulos);
 }
 
-/* Nosotros */
 .bloque-nosotros {
   background-color: var(--color-tarjeta);
   padding: 25px;
@@ -209,7 +208,6 @@
   border: 2px solid var(--color-acento);
 }
 
-/* Preguntas frecuentes (<details>) */
 .acordeon-faq {
   max-width: 800px;
   margin: 0 auto;
@@ -238,7 +236,6 @@
   font-size: 0.94rem;
 }
 
-/* Contacto y validación HTML5 sin JS */
 .grid-contacto {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
