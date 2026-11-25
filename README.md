@@ -28,12 +28,12 @@ Clientes que buscan recortes de cabello (clásicos, degradados/fade, infantiles)
 | `README.md` | Juan Pablo Barbosa Berrio / Daniel Alejandro Pérez Rodríguez |
 
 ## Pendientes
-- [ ] Kit con las variables de la marca (`css/kit.css`) usado en todas las páginas
-- [ ] Menú igual en las 4 páginas con todos los enlaces funcionando
-- [ ] Estructura de carpetas en la raíz (`css/kit.css`, `css/estilos.css`, `img/`, 4 páginas HTML)
-- [ ] 2 páginas terminadas (`index.html` y `nosotros.html`) con contenido real, imágenes con `alt` y responsive a 360 px
-- [ ] Completar contenido real y responsive a 360 px en `servicios.html` y `contacto.html` (Daniel Alejandro)
-- [ ] Subir cambios de ambos integrantes cada uno desde su cuenta de GitHub y verificar mismos enlaces de entrega
+- [x] Kit con las variables de la marca (`css/kit.css`) usado en todas las páginas
+- [x] Menú igual en las 4 páginas con todos los enlaces funcionando
+- [x] Estructura de carpetas en la raíz (`css/kit.css`, `css/estilos.css`, `img/`, 4 páginas HTML)
+- [x] 2 páginas terminadas (`index.html` y `nosotros.html`) con contenido real, imágenes con `alt` y responsive a 360 px
+- [x] Completar contenido real y responsive a 360 px en `servicios.html` y `contacto.html` (Daniel Alejandro)
+- [x] Subir cambios de ambos integrantes cada uno desde su cuenta de GitHub y verificar mismos enlaces de entrega
 
 ## Paleta y tipografía
 - **Principal:** `#1A1A1D`
@@ -42,5 +42,8 @@ Clientes que buscan recortes de cabello (clásicos, degradados/fade, infantiles)
 - **Claro / Texto:** `#F5F5F5`
 - **Fuente:** `'Oswald', sans-serif` (títulos) y `'Roboto', sans-serif` (textos)
 
-## Boceto de la página de inicio
-![Boceto de inicio](img/boceto-inicio.png)
+##Cambios por la revisión del cliente
+
+-Ajuste de la imagen principal del inicio
+-Destacar el Combo HJ y mostrar horarios y precios con claridad
+-Reserva directa por WhatsApp
